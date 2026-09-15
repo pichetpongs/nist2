@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <title>ระบบบันทึก/แสดง สิทธิ์จอดพาหนะ</title>
     <script>
+      const cache = "&_ts=" + Date.now();
       const params = window.location.search;
       //const target = "https://pichetpongs.github.io/parkqr.viewer/nist2/" + params;
-      const target = "https://parkqr.netlify.app/clients/nist2/viewer/" + params;
+      const target = "https://parkqr.netlify.app/clients/nist2/viewer/" + params + cache;
       location.href = target;
     </script>
   </head>
